@@ -54,7 +54,7 @@ group {
 lifeline {
     display: block;
     position: relative;
-    left: -2em;
+    left: -2em;;
 }
 
 .sequence-diagram-layout {
@@ -155,35 +155,65 @@ lifeline {
 }
 
 .sequence-diagram-layout .group .group .lifeline {
-    border-left-color: #C98;
-    color: #B87;
+    border-left: 0.5em solid #89C;
+    color: #89C;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
 .sequence-diagram-layout .group .group .group .lifeline {
-    border-left-color: #9C8;
-    color: #8B7;
+    border-left: 0.5em solid #89C;
+    color: #89C;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
 .sequence-diagram-layout .group .group .group .group.lifeline {
     border-left-color: #BBB;
     color: #BBB;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
 .sequence-diagram-layout .group .group .group .group {
     padding-left: 0.25em;
 }
 
-.sequence-diagram-layout hr,
-.sequence-diagram-layout .section {
+.sequence-diagram-layout hr {
     border: none;
-    border-top: 0.3em dashed #DDD;
-    margin-top: 1em;
-    padding-top: 0.5em;
+    border-top: 0.1em dashed #89C;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sequence-diagram-layout .solid-line {
+    border: none;
+    border-top: 0.2em solid #89C;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .sequence-diagram-layout .section-title {
     font-size: 1.2em;
     color: #888;
+    margin-left: 0.5em;
+    text-align: left;
+    position: relative;
+    top: -0.2em;
+}
+
+.sequence-diagram-layout .section-title-success {
+    font-size: 1.0em;
+    color: rgb(21, 240, 185);
+    margin-left: 0.5em;
+    text-align: left;
+    position: relative;
+    top: -0.2em;
+}
+
+.sequence-diagram-layout .section-title-fail {
+    font-size: 1.0em;
+    color: rgb(235, 18, 18);
     margin-left: 0.5em;
     text-align: left;
     position: relative;
